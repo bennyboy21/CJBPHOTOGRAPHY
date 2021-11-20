@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+@media (max-width:499px) {
+    body {
+        background:rgb(255, 255, 255);
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #hole-Page {
+        width:100vw;
+        height:335vh;
+        position:absolute;
+        top:0px;
+        left:0px;
+        overflow: hidden;
+    }
+
+    #top-Bar {
+        width:100%;
+        height:50px;
+        position:fixed;
+        top:0px;
+        left:0px;
+        background:rgb(0, 0, 0);
+        box-shadow: 1px 0px 15px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    #logo {
+        color: white;
+        position:absolute;
+        top:calc(100% - 49px);
+        font-family: 'Raleway', sans-serif;
+        font-weight: 200;
+        left:5px;
+        font-size: 40px;
+    }
+
+    #main-Image-Holder {
+        width:1250px;
+        height:100vh;
+        margin-left: calc(-625px + 50vw);
+        position:fixed;
+        background:rgb(0, 0, 0);
+    }
+
+    #main-Image {
+        width:1250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #arrow {
+        width:20px;
+        height:20px;
+        transform: rotate(-45deg);
+        border-left: 2px solid white;
+        border-bottom: 2px solid white;
+        position:absolute;
+        top:80vh;
+        left:calc(50% - 10px);
+        animation: MoveArrow 1.25s infinite;
+    }
+
+    @keyframes MoveArrow {
+        0% {
+            top:80vh;
+        }
+
+        50% {
+            top:calc(80vh + 10px);
+        }
+
+        100% {
+            top:80vh;
+        }
+    }
+
+    #menu-Holder {
+        width:40px;
+        height:40px;
+        position:absolute;
+        top:3px;
+        left:calc(100% - 47px);
+    }
+
+    #menu-Lines {
+        width:100%;
+        height:2px;
+        background:white;
+        position:absolute;
+        top:calc(50% - 1px);
+    }
+
+    #menu-Lines::before {
+        content: "";
+        width:100%;
+        height:2px;
+        background:white;
+        position:absolute;
+        top:calc((40px / 3) - 1px);
+    }
+
+    #menu-Lines::after {
+        content: "";
+        width:100%;
+        height:2px;
+        background:white;
+        position:absolute;
+        top:calc((-40px / 3) + 1px);
+    }
+
+    #menu-Transition {
+        width:100%;
+        height:100vh;
+        position:fixed;
+        background:white;
+        top:-100vh;
+    }
+
+    @keyframes openMenu {
+        0% {
+            top:-100vh;
+        }
+
+        100% {
+            top:0px;
+        }
+    }
+
+    #close-Menu {
+        font-size: 50px;
+        position:absolute;
+        transform: rotate(45deg);
+        top:-5px;
+        left:calc(100% - 40px);
+    }
+
+    @keyframes closeMenu {
+        0% {
+            top:0px;
+        }
+
+        100% {
+            top:-100vh;
+        }
+    }
+
+    #button-One-Holder {
+        width:100%;
+        height:50px;
+        position:absolute;
+        border-bottom: 2px solid black;
+        top:60px;
+    }
+
+    #button-One {
+        text-align: center;
+        font-size: 33px;
+        color: black;
+        font-weight: 700;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    #section-One-Marker {
+        width:100%;
+        height:9vh;
+        position:absolute;
+        /* background:black; */
+        top:92vh;
+    }
+
+    #stop-Section-Thing {
+        width:50px;
+        height:50px;
+        position:absolute;
+        top:91vh;
+    }
+
+    #button-Two-Holder {
+        width:100%;
+        position:absolute;
+        border-bottom: 2px solid black;
+        top:114px;
+    }
+
+    #button-Two {
+        text-align: center;
+        font-size: 33px;
+        color: black;
+        font-weight: 700;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    #section-Two-Marker {
+        width:100%;
+        height:9vh;
+        position:absolute;
+        top:210vh;
+    }
+
+    #show-Images {
+        width:0vw;
+        height:100vh;
+        position:fixed;
+        top:0px;
+        left:0px;
+        opacity: 0;
+        background:rgba(0, 0, 0, 0.8);
+    }
+
+    @keyframes showImages {
+        0% {
+            opacity: 0;
+        }
+
+        1% {
+            width:100vw;
+        }
+
+        100% {
+            opacity: 1;
+            width:100vw;
+        }
+    }
+
+    @keyframes closeImages {
+        0% {
+            opacity: 1;
+        }
+
+        99% {
+            width:0vw;
+        }
+
+        100% {
+            opacity: 0;
+            width:0vw;
+        }
+    }
+
+    #close-Images {
+        font-size: 50px;
+        color: white;
+        transform: rotate(45deg);
+        position:absolute;
+        top:5px;
+        left:calc(100% - 55px);
+    }
+
+    #show-Image-IMG {
+        width:100%;
+        position:absolute;
+        top: calc(50% - 100px);
+    }
+    
+
+
+
+
+
+
+    /* Section One */
+
+
+
+
+
+
+    #section-One-Slant {
+        width:110%;
+        height:100px;
+        background:rgb(255, 255, 255);
+        transform: rotate(-5deg);
+        position: absolute;
+        top:96vh;
+        left:-10px;
+    }
+
+    #section-One {
+        background:rgb(255, 255, 255);
+        position:absolute;
+        top:100vh;
+        width:100vw;
+        height:125vh;
+    }
+
+    #section-One-Title-Holder {
+        font-size: 27px;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 700;
+        text-shadow: 0px 0px 5px 5px rgb(0, 0, 0);
+        width:100%;
+        height:30px;
+        color: rgb(0, 0, 0);
+        text-align: center;
+    }
+
+    #section-One-Image-Holder {
+        position:absolute;
+        left:calc(100% - 90vw);
+    }
+
+    #section-One-Image-One {
+        width:80vw;
+        border-radius: 15px;
+        box-shadow: 0px 3px 7px 1px rgba(0, 0, 0, 0.3);
+        margin-top: 15px;
+    }
+
+    #section-One-Image-Two {
+        width:80vw;
+        border-radius: 15px;
+        box-shadow: 0px 3px 7px 1px rgba(0, 0, 0, 0.3);
+        margin-top: 15px;
+    }
+
+    #section-One-Image-Three {
+        width:80vw;
+        border-radius: 15px;
+        box-shadow: 0px 3px 7px 1px rgba(0, 0, 0, 0.3);
+        margin-top: 15px;
+    }
+
+
+
+
+
+
+    /* Section Two */
+
+
+
+
+
+
+    #section-Two-Slant {
+        width:4000px;
+        height:100px;
+        background:rgb(0, 0, 0);
+        transform: rotate(5deg);
+        position: absolute;
+        top:236vh;
+        left:-100px;
+    }
+
+    #section-Two {
+        background:rgb(0, 0, 0);
+        position:absolute;
+        top:220vh;
+        left:0px;
+        width:100vw;
+        height:140vh;
+    }
+
+    #section-Two-Title-Holder {
+        font-size: 27px;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 1000;
+        width:100%;
+        height:30px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+    }
+
+    #section-Two-Image-Holder {
+        position:absolute;
+        left:calc(100% - 90vw);
+    }
+
+    #section-Two-Image-One {
+        width:80vw;
+        border-radius: 15px;
+        margin-top: 15px;
+    }
+
+    #section-Two-Image-Two {
+        width:80vw;
+        border-radius: 15px;
+        margin-top: 15px;
+    }
+
+    #section-Two-Image-Three {
+        width:80vw;
+        border-radius: 15px;
+        margin-top: 15px;
+    }
+
+
+
+
+
+
+    /* Section Three */
+
+
+
+
+
+
+    #section-Three-Slant {
+        width:4000px;
+        height:100px;
+        background:rgb(255, 255, 255);
+        transform: rotate(-5deg);
+        position: absolute;
+        top:310vh;
+        left:-100px;
+    }
+
+    #section-Three {
+        background:rgb(255, 255, 255);
+        position:absolute;
+        top:335vh;
+        left:0px;
+        width:100vw;
+        height:135vh;
+    }
+
+    #section-Two-Title-Holder {
+        font-size: 27px;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 1000;
+        width:100%;
+        height:30px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+    }
+
+    #section-Two-Image-Holder {
+        position:absolute;
+        left:calc(100% - 90vw);
+    }
+
+    #section-Two-Image-One {
+        width:80vw;
+        border-radius: 15px;
+        margin-top: 15px;
+    }
+
+    #section-Two-Image-Two {
+        width:80vw;
+        border-radius: 15px;
+        margin-top: 15px;
+    }
+
+    #section-Two-Image-Three {
+        width:80vw;
+        border-radius: 15px;
+        margin-top: 15px;
+    }
+}
